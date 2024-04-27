@@ -1,6 +1,5 @@
 # Final Project
 
-# Jacob B, Bill, Arina
 
 ## Twenty Research Queries
 
