@@ -1,7 +1,5 @@
 # Final Project
 
-# Jacob B., Bill, Arina
-
 ## Report
 
 Please answer the below questions using clear and meaningful language. No one-liners, please.
