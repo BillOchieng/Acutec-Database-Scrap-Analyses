@@ -1,50 +1,56 @@
-# perform checks on a file
-
-# check the technical writing for various characteristics
-- writing/reflection.md:
-    - description: Ensure that reflection.md file exists in the writing/ directory
+# --> check the build file
+- src/queries.md:
+    - description: Ensure that the file src/queries.md exists
       check: ConfirmFileExists
-    # - description: Write a minimum number of meaningful words in the reflection
-    #   check: CountFileWords
-    #   options:
-    #     count: 400
-    #     exact: false
-    - description: Complete all TODOs, remove the TODO markers in the reflection.md
+    - description: Complete all TODOs and remove the TODO markers in the file src/queries.md
       check: MatchFileFragment
       options:
         fragment: TODO
         count: 0
         exact: true
-    - description: Delete the 'Add Your Name Here' prompt in the reflection file
+    - description: Delete the 'Add Your Name Here' prompt in the file src/build_DB.txt
       check: MatchFileFragment
       options:
         fragment: "Add Your Name Here"
         count: 0
         exact: true
 
-- src/code.r:
-    - description: Ensure that code.r file exists in the src/ directory
+- writing/report.md:
+    - description: Ensure that the file writing/report.md exists
       check: ConfirmFileExists
-    # - description: Write a minimum number of meaningful words in the code
-    #   check: CountFileWords
-    #   options:
-    #     count: 400
-    #     exact: false
-    - description: Complete all TODOs, remove the TODO markers in the code.r
+    - description: Complete all TODOs and remove the TODO markers in the file writing/report.md
       check: MatchFileFragment
       options:
         fragment: TODO
         count: 0
         exact: true
-    - description: Delete the 'Add Your Name Here' prompt in the reflection file
+    - description: Delete the 'Add Your Name Here' prompt in the file writing/report.md
       check: MatchFileFragment
       options:
         fragment: "Add Your Name Here"
         count: 0
         exact: true
 
-# count number of commits in the GitHub repository
-- description: Have at least a specific minimum number of commits (4) in repository
+- writing/research_questions.md:
+    - description: Ensure that the file writing/research_questions.md exists
+      check: ConfirmFileExists
+    - description: Complete all TODOs and remove the TODO markers in the file writing/research_questions.md
+      check: MatchFileFragment
+      options:
+        fragment: TODO
+        count: 0
+        exact: true
+    - description: Delete the 'Add Your Name Here' prompt in the file writing/research_questions.md
+      check: MatchFileFragment
+      options:
+        fragment: "Add Your Name Here"
+        count: 0
+        exact: true
+
+
+
+# --> check that the number of commits in the Git repository is beyond a threshold
+- description: Have at least a specific minimum number of commits (3) in repository
   check: CountCommits
   options:
-    count: 4
+    count: 3
