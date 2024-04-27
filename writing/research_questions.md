@@ -1,7 +1,5 @@
 # Five Research Questions
 
-# Jacob B, Bill, Arina
-
 ## Question 1
 
 * Explain What is the research question?
